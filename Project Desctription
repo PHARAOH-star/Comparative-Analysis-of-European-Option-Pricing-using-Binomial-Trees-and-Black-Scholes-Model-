@@ -1,0 +1,48 @@
+ 
+Title: Comparative Analysis of European Option Pricing using Binomial Trees and Black-Scholes Model 
+Overview: This project aims to explore and compare two foundational methods for pricing European options: the Binomial Tree model and the Black-Scholes model. Both techniques are widely used in financial engineering and quantitative finance, but differ significantly in approach, assumptions, and computational characteristics. The objective is to understand these differences, implement both models, and analyze their accuracy and efficiency using real-world data for European call and put options.
+Objectives:
+1.	Implement pricing algorithms for European call and put options using:
+   - The Binomial Tree model
+   - The Black-Scholes closed-form formula
+2.	Explain and compare the mathematical assumptions underlying both models (e.g., continuous vs discrete time, constant volatility).
+3.	Analyze the convergence of binomial pricing to the Black-Scholes value as the number of steps increases.
+4.	Evaluate model sensitivity to key parameters:
+   - Volatility
+   - Time to maturity
+   - Risk-free interest rate
+   - Strike price
+5.	Collect real market data (e.g., SPY, AAPL options) and compare the models’ output to actual market prices.
+NOTE: If you’re using yfinance, yfinance doesn’t support index options and options on Indian stocks. Use any American ETF (ex - SPY) or stock in this case.
+6.	Draw conclusions about the conditions under which one model may be preferable over the other for European options.
+Scope:
+·  	Focus exclusively on European-style vanilla options (both calls and puts).
+·  	Price options on a selected set of large-cap equities or indices (e.g., SPY, AAPL).
+·  	Use historical and real-time market data for calibration and validation.
+·  	Implement models in Python, with adjustable parameters and visualization of results.
+Deliverables:
+·  	The submission is to be made in the form of a python notebook.
+·  	A working Binomial Tree pricing function with variable step control.
+·  	A Black-Scholes calculator function (should also calculate the option greeks).
+·  	A performance comparison report (to be added in the notebook itself), covering:
+   - Pricing accuracy
+   - Computational efficiency
+   - Error convergence
+·  	Visualizations comparing:
+   - Price convergence (binomial vs. Black-Scholes)
+   - Sensitivity to volatility and other variables
+   - Deviations from market prices
+Constraints:
+·  	Black-Scholes assumes constant volatility, interest rates, and log-normal returns.
+·  	Binomial trees become more accurate with increased steps but at the cost of computational time.
+·  	Real-world data may not perfectly align with theoretical assumptions (e.g., implied volatility vs. historical volatility).
+·  	Accuracy of pricing comparison depends on data quality and precise implementation.
+ 
+Resources:
+·  	Books:
+   - Options, Futures and Other Derivatives by John C. Hull (Ch. 10–13, 15)
+·  	Libraries:
+   - Python: NumPy, Pandas, yFinance, Matplotlib
+
+
+
